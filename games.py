@@ -1,10 +1,8 @@
-# Import random module.
 import random
 
 # Current amount of money which should change depending on whether you win or lose the game.
 money = 100
 
-#Write your game of chance functions here
 
 # Function that simulates FLIPPING A COIN.
 def coin_flip(bet, guess):
@@ -83,10 +81,8 @@ def higher_card(bet):
       print("It seems you don't have enough money to bet.")
       return 0
   
-  # Create a list of cards to pick from a deck of cards using the range() function. This function will return a sequence of numbers, in this case cards, starting from 1 up to 20.
   available_cards = list(range(1,21))
 
-  # Use the sort() method to sort the list of cards ascending by default.
   available_cards.sort()
 
   # Code to see all available cards.
@@ -142,7 +138,6 @@ def roulette(bet, guess):
     print("You lost £" + str(bet) + ".")
     return -bet
 
-#Call your game of chance functions here
 money += coin_flip(20, "Tails")
 
 money += cho_han(7000, "Even")
